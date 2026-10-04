@@ -59,7 +59,7 @@ $ocupation.textContent = 'Ingeniero en telecomunicaciones';
 
 const $nameEl = document.createElement('h1');
 $nameEl.className = 'name';
-$nameEl.textContent = 'Nombre apellido';
+$nameEl.textContent = 'Luisana Pino';
 
 $containerName.append($ocupation, $nameEl);
 $containerFront1.append($containerPhoto, $containerName);
