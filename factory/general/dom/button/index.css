@@ -1,0 +1,56 @@
+/* --- VARIABLES --- */
+.btn {
+  --btn-bg-color: #fdfdfd;
+  --btn-padding: 6px 14px;
+  --btn-border: 1px solid #000;
+  --btn-border-radius: 4px;
+  --btn-font-size: 0.85rem;
+  --btn-font-weight: 600;
+  --btn-color: #000;
+  --btn-hover-bg-color: #c0c0c0;
+}
+
+/* --- BASIC STYLES --- */
+.btn {
+  max-width: 100%;
+  background: var(--btn-bg-color);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-border-radius);
+  border: var(--btn-border);
+  font-family: inherit;
+  font-weight: var(--btn-font-weight);
+  color: var(--btn-color);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: var(--btn-hover-bg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(73, 75, 181, 0.3);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- BTN GREEN --- */
+.btn.btn-black {
+  --btn-bg-color: #90d4aa;
+  --btn-color: #000;
+  --btn-hover-bg-color: #8affb8;
+}
+
+/* --- BTN PURPLE --- */
+.btn.btn-purple {
+  --btn-bg-color: #494bb5;
+  --btn-color: #f4f4f4;
+  --btn-hover-bg-color: #383a95;
+}
+
+
+

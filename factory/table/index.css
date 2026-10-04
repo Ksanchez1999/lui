@@ -1,0 +1,371 @@
+
+/* ===========================================
+                  VARIABLES
+=========================================== */
+.table-container {
+  /* --- CONTAINER --- */
+  --container-max-width: 95%;
+  --container-table-max-height: 33em;
+  --container-font-family: 'Source Sans 3', sans-serif;
+  --container-font-size: 14px;
+  --container-border: 0.11em solid #000;
+	
+	/* --- COLUMNS MANAGEMENT BTN --- */
+	--btn-columns-management-color: #343434;
+	--btn-columns-management-color-hover: #000;
+	
+  /* --- THEAD --- */
+  --head-bg-color: #ddd;
+  --head-color: #000;
+
+  /* --- INPUT --- */
+  --input-border: 1px solid #3a3a3a99;
+  --input-bg-color: #f0f0f0;
+  --input-color: #000;
+  --input-border-color-focus: #000;
+
+  /* - TBODY - */
+  --body-bg-color: #eee;
+  --body-bg-color-even-rows: #bbb;
+  --body-hover-bg-color: #fbfbfb;
+  --body-color: #000;
+  --body-secondary-data-color: #71717a;
+
+  /* - MSG ALL TD - */
+  --td-error-msg-color: #d9534f;
+  --td-no-results-msg-color: #000;
+
+  /* --- SCROLLBAR --- */
+  --scrollbar-thumb: #8e8e98;
+  --scrollbar-thumb-hover: rgb(58, 58, 64);
+}
+
+
+.column-management-modal {
+	/* - MODAL COLUMNS MANAGEMENT */
+  --modal-columns-management-font-size: 14px;
+  --modal-columns-management-bg-color: #fff;
+
+  /* --- LABEL --- */
+  --label-color: #000;
+}
+
+
+
+
+/* ===========================================
+									SCROLLBAR
+=========================================== */
+.table-container .table-container-2::-webkit-scrollbar {
+  width: 0.65em;
+  height: 0.65em;
+}
+
+.table-container .table-container-2::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 1.2em;
+  border: 1px solid transparent; 
+  background-clip: padding-box;
+}
+
+.table-container .table-container-2::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+.table-container .table-container-2::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.9em;
+}
+
+.table-container .table-container-2::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+/* ===========================================
+									GENERAL
+=========================================== */
+.table-container * {
+  font-family: var(--container-font-family);
+  white-space: nowrap;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ----- CELLS ----- */
+.table-container th, 
+.table-container td {
+  padding: 0;
+  height: 3.3em;
+}
+
+.table-container th > div, 
+.table-container td > div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.85em 0.7em;
+  height: 3.3em;
+  min-width: 0; 
+  width: 100%;
+  letter-spacing: -0.01em;
+}
+
+.table-container tbody td > div {
+  cursor: pointer;
+}
+
+
+
+/* ===========================================
+                  CONTAINER
+=========================================== */
+.table-container {
+  font-size: var(--container-font-size);
+  position: relative;
+  max-width: var(--container-max-width);
+  background: var(--head-bg-color);
+  border-radius: 	0.4em;
+	border: var(--container-border);
+  box-shadow: 0 0.4em 1.3em rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ===========================================
+              COLUMNS MANAGEMENT
+=========================================== */
+/* ----- BUTTON ----- */
+.column-management-button{
+	position: absolute;
+  top: 0;
+	left: 0.2em;
+  transform: translateY(-100%);
+  color: var(--btn-columns-management-color);
+  background: var(--head-bg-color);
+  padding: 0.6em 0.85em;
+  border: var(--container-border);
+  border-bottom: none;
+  border-radius: 0.4em 0.4em 0 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.column-management-button:hover{
+  color: var(--btn-columns-management-color-hover);
+}
+
+.hidden-col {
+  display: none;
+}
+
+
+/* ----- MODAL ----- */
+.column-management-modal {
+  font-size: var(--modal-columns-management-font-size);
+  padding: 2.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  align-items: flex-start;
+  background-color: var(--modal-columns-management-bg-color);
+
+}
+
+.column-management-modal label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8em;
+  cursor: pointer;
+  color: var(--label-color);
+}
+
+.column-management-modal label span {
+  font-size: 1.3em;
+  white-space: nowrap;
+  text-align: left;
+}
+
+
+.input-checkbox {
+  --checkbox-width: 1.4em;
+  --checkbox-height: 1.4em;
+}
+
+
+
+
+/* ===========================================
+                  TABLE
+=========================================== */
+/* ----- TABLE CONTAINER ----- */
+.table-container .table-container-2 {
+  max-height: var(--container-table-max-height);
+  border-radius: 0.4em;
+  overflow: auto;
+}
+
+/* ----- TABLE ----- */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+	transition: opacity 0.2s ease-in-out;
+}
+
+
+
+
+
+/* ===========================================
+                  CAPTION
+=========================================== */
+caption {
+	caption-side: top;
+	text-align: center;
+  background-color: var(--head-bg-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
+  padding-top: 0.95em;
+  padding-bottom: 1.2em;
+}
+
+.hide-caption {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);     
+	clip-path: inset(50%); 
+	white-space: nowrap;
+	border: 0;
+}
+
+
+
+
+
+/* ===========================================
+                  THEAD
+=========================================== */
+.table-container thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
+/* ----- CELLS ----- */
+.table-container thead th > div,
+.table-container thead td > div{
+  background-color: var(--head-bg-color);
+  color: var(--head-color);
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.table-container thead td > div{
+	padding: 0.4em 0.8em;
+}
+
+
+/* ----- TR ----- */
+.table-container thead tr:last-child {
+	border-bottom: var(--container-border);
+}
+
+
+
+
+
+/* ----- INPUT ----- */
+.table-container thead tr:last-child td > div {
+  padding: 0em 0.4em 0.6em 0.4em;
+}
+
+.table-container thead tr:last-child input:focus {
+  outline: none;
+  border-color: var(--input-border-color-focus);
+}
+
+.table-container thead tr:last-child input{
+	width: 100%;
+  background: var(--input-bg-color);
+  color: var(--input-color);
+  padding: 0.4em 0.9em;
+  border: var(--input-border);
+  border-radius: 0.4em;
+  transition: border-color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+
+/* ===========================================
+                  TBODY
+=========================================== */
+/* ----- ROW ----- */
+.table-container tbody tr {
+  background-color: var(--body-bg-color);
+  transition: background-color 0.15s ease;
+  border-bottom: var(--container-border);
+}
+
+.table-container tbody tr:nth-child(even) {
+  background-color: var(--body-bg-color-even-rows);
+}
+
+.table-container tbody tr:hover{
+  background-color: var(--body-hover-bg-color);
+}
+
+
+/* ----- CELLS ----- */
+.table-container tbody tr td > div {
+  color: var(--body-color);
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.table-container tbody tr:last-child td > div {
+  border-bottom: transparent;
+}
+
+
+/* ----- TBODY LOADING ----- */
+.tbody-loading {
+	opacity: 0.9;
+	pointer-events: none;
+	cursor: wait;
+}
+
+/* ----- TD MSGS ----- */
+.td-error-msg,
+.td-no-results-msg {
+	text-align: center;
+	padding: 20px;
+}
+
+.td-error-msg {
+  color: var(--td-error-msg-color);
+}
+
+.td-no-results-msg {
+  color: var(--td-no-results-msg-color);
+}
+
+
+
+

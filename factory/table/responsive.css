@@ -1,0 +1,35 @@
+
+/* ===========================================
+                  720P
+=========================================== */
+@media (max-width: 720px) {
+  .table-container {
+    /* - TABLE - */
+    --container-font-size: 12px;
+  }
+
+  /* ----- MODAL ----- */
+  .column-management-modal {
+    --modal-columns-management-font-size: 12px;
+  }
+}
+
+
+
+
+
+/* ===========================================
+                  480P
+=========================================== */
+@media (max-width: 480px) {
+  .table-container {
+    /* - TABLE - */
+    --container-font-size: 9px;
+  }
+
+  /* ----- MODAL ----- */
+  .column-management-modal {
+    --modal-columns-management-font-size: 9px;
+  }
+}
+

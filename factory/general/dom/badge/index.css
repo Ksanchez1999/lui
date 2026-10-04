@@ -1,0 +1,31 @@
+
+.badge {
+  display: inline-block;
+  background-color: #f4f4f9;
+  color: #656565;
+  padding: 0.4em 0.8em;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 2em;
+  text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+	user-select: none;
+}
+
+.badge-active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge-inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}

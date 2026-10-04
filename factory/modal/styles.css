@@ -1,0 +1,83 @@
+
+/* =======================================
+								INFO
+======================================= */
+.modal.modal-info > div {
+  /*MODAL-CONTENT*/
+  background-color: #f0fdfa;
+
+	border-left-width: 0.7em;
+  border-left-style: solid;
+  border-left-color: #06b6d4;
+
+  padding: 2em;
+}
+
+.modal.modal-info > div > p {
+  font-size: 2.2em;
+  color: #164e63;
+}
+
+
+
+/* =======================================
+								SUCCESS
+======================================= */
+.modal.modal-success > div {
+  /*MODAL-CONTENT*/
+  background-color: #f0fdf4;
+
+	border-left-width: 0.7em;
+  border-left-style: solid;
+  border-left-color: #22c55e;
+
+  padding: 2em;
+}
+
+.modal.modal-success > div > p {
+  font-size: 2.2em;
+  color: #164e63;
+}
+
+
+/* =======================================
+								ALERT
+======================================= */
+.modal.modal-alert > div {
+  /*MODAL-CONTENT*/
+  background-color: #fef2f2;
+
+	border-left-width: 0.7em;
+  border-left-style: solid;
+  border-left-color: #ef4444;
+
+  padding: 2em;
+}
+
+.modal.modal-alert > div > p {
+  font-size: 2.2em;
+  color: #991b1b;
+}
+
+
+
+
+/* =======================================
+								WARNING
+======================================= */
+.modal.modal-warning > div {
+  /*MODAL-CONTENT*/
+  background-color: #fefce8;
+
+	border-left-width: 0.7em;
+  border-left-style: solid;
+  border-left-color: #eab308;
+
+  padding: 2em;
+}
+
+.modal.modal-warning > div > p {
+  font-size: 2.2em;
+  color: #713f12;
+}
+

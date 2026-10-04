@@ -1,0 +1,104 @@
+
+
+/* ===========================================
+								BLACK-TABLE
+=========================================== */
+/* ---------- VARIABLES ---------- */
+.container-black-table {
+  /* --- CONTAINER --- */
+  --container-border: 0.11em solid #232329;
+
+	/* - COLUMNS MANAGEMENT BTN */
+	--btn-columns-management-color: #94a3b8;
+	--btn-columns-management-color-hover: #7a8696;
+
+  /* - THEAD - */
+  --head-bg-color: #050506;
+  --head-color: #8193ac;
+
+  /* - INPUT - */
+  --input-border: 1px solid #2d2d38;
+  --input-bg-color: #1c1c22;
+  --input-color: #e2e8f0;
+  --input-border-color-focus: #6366f1;
+
+  /* - TBODY - */
+  --body-bg-color: #16161a;
+  --body-hover-bg-color: #25252e;
+  --body-bg-color-even-rows: #1c1c22;
+  --body-color: #e2e8f0;
+  --body-secondary-data-color: #71717a;
+
+  /* - MSG ALL TD - */
+  --td-error-msg-color: #d9534f;
+  --td-no-results-msg-color: #fff;
+
+  /* - SCROLLBAR - */
+  --scrollbar-thumb: #27272a;
+  --scrollbar-thumb-hover: #3f3f46;
+}
+
+
+.column-management-modal.columns-management-modal-black-table {
+	/* - MODAL COLUMNS MANAGEMENT */
+  --modal-columns-management-bg-color: #1c1c22;
+
+  /* --- LABEL --- */
+  --label-color: #e2e8f0;
+}
+
+
+
+
+
+
+/* ===========================================
+								INPUT TEXT
+=========================================== */
+/* ---------- VARIABLES ---------- */
+.container-black-table input{
+  --input-bg-color: #1c1c22;
+  --input-color: #e2e8f0;
+  --input-border-color: #2d2d38;
+  --input-border-color-focus: #6366f1;
+}
+
+
+/* ---------- INPUT ---------- */
+.container-black-table input{
+  background: var(--input-bg-color);
+  color: var(--input-color);
+	border-color: var(--input-border-color);
+  transition: border-color 0.2s;	
+}
+
+.container-black-table input:focus {
+  border-color: var(--input-border-color-focus);
+}
+
+
+
+
+/* ===========================================
+								INPUT CHECKBOX
+=========================================== */
+/* ---------- VARIABLES ---------- */
+.container-black-table input{
+  --input-bg-color: #1c1c22;
+  --input-color: #e2e8f0;
+  --input-border-color: #2d2d38;
+  --input-border-color-focus: #6366f1;
+}
+
+
+/* ---------- INPUT ---------- */
+.container-black-table input{
+  background: var(--input-bg-color);
+  color: var(--input-color);
+	border-color: var(--input-border-color);
+  transition: border-color 0.2s;	
+}
+
+.container-black-table input:focus {
+  border-color: var(--input-border-color-focus);
+}

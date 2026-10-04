@@ -1,0 +1,22 @@
+/* ===========================================
+                    SCROLL
+=========================================== */
+.container-table::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.container-table::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 12px;
+}
+
+.container-table::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 1px solid transparent; 
+  background-clip: padding-box;
+}
+
+.container-table::-webkit-scrollbar-corner {
+  background: transparent;
+}

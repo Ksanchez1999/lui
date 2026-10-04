@@ -1,0 +1,50 @@
+
+
+
+
+/* =================================================
+                      CARD
+================================================= */
+/* ========== CARD CONTAINER ========== */
+.card-container {
+  display: flex;
+  perspective: 1000px;
+}
+
+/* ========== CARD ========== */
+.card {
+  position: relative;
+  display: grid;
+  will-change: transform;
+  transform: translate3d(0, 0, 0); 
+  -webkit-transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* FLIPPED */
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+/* CARD FACE */
+.card-face {
+  border: 5px solid transparent;
+  grid-column: 1;
+  grid-row: 1;
+  backface-visibility: hidden;
+}
+
+
+/* CARD FRONT */
+.card-front {}
+
+
+/* CARD BACK */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+
+
